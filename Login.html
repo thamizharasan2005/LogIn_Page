@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background:linear-gradient(to bottom right, rgb(31, 217, 152),rgb(25, 239, 239));
+      font-family: sans-serif;
+
+    }
+    .container{
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 1px 1px 10px 2px;
+    }
+   .input,h1{
+    margin-bottom: 20px;
+   }
+  .input{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #0a0505;
+  }
+  .submit{
+    width: 60%;
+    padding: 10px;
+    background:rgb(77, 224, 187);
+    color: black;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 17px;
+    border: none;
+
+  }
+  .submit:hover{
+    background: rgb(28, 214, 223);
+  }
+  .check{
+    margin-bottom: 10px;
+    text-align:left;
+    position: absolute;
+  }
+ .password{
+  font-size: 14px;
+ 
+ }
+ p{
+  text-decoration: none;
+ }
+
+ p:hover{
+  color: rgb(28, 214, 223);
+ }
+ .remember{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  margin-bottom: 10px;
+ }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1 class="title">Login</h1>
+  <form>
+    <input type="text" class="input" placeholder="Username" required> <br>
+    <input type="password" class="input" placeholder="password" required> <br>
+    <input type="checkbox" class="check"  ><label>Remember Me</label><br>
+    <button type="submit" class="submit">Login</button>
+  </form>
+   <p>New User?<a href="signin.html">Signin</a></p>
+  <div class="password">
+  <a href="https://in.pinterest.com/pin/713398397255824861/">Forgot Password?</a>
+</div>
+</div>
+</body>
+</html>
