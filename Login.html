@@ -3,86 +3,93 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
+  <title>LOGIN PAGE</title>
   <style>
     body{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background:linear-gradient(to bottom right, rgb(31, 217, 152),rgb(25, 239, 239));
       font-family: sans-serif;
-
+      display:flex;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+      background:linear-gradient(to top right, rgb(9, 219, 212), rgb(21, 218, 146));
     }
     .container{
-      background: white;
-      padding: 20px;
+      border: solid 2px black;
       border-radius: 10px;
+      padding: 20px;
       width: 300px;
       text-align: center;
-      box-shadow: 1px 1px 10px 2px;
+      background-color: white;
     }
-   .input,h1{
-    margin-bottom: 20px;
-   }
-  .input{
-    width: 90%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px solid #0a0505;
-  }
-  .submit{
-    width: 60%;
-    padding: 10px;
-    background:rgb(77, 224, 187);
-    color: black;
-    border-radius: 30px;
-    cursor: pointer;
-    font-size: 17px;
-    border: none;
+    h1{
+      text-align: center;
+    }
+    .input{
+      margin-bottom: 15px;
+      padding: 10px;
+      border:solid 2px black;
+      border-radius: 9px;
+      width: 85%;
+      font-size: 17px;
+      cursor:text;
+      margin-top: 3px;
 
-  }
-  .submit:hover{
-    background: rgb(28, 214, 223);
-  }
-  .check{
-    margin-bottom: 10px;
-    text-align:left;
-    position: absolute;
-  }
- .password{
-  font-size: 14px;
- 
+      
+    }
+    label{
+      font-size: 17px;
+      padding-right: 200px;
+      
+    }
+    .log{
+      padding: 14px;
+      width: 40%;
+      border-radius: 30px;
+      margin-top: 20px;
+      font-size: 17px;
+      background: linear-gradient(to top right, rgb(9, 219, 212), rgb(21, 218, 146));
+      border: none;
+      cursor: pointer;
+    }
+    .log:hover{
+      transition:ease-in-out;
+    }
+  #check{
+    display:flex;
+    padding-left: 9px;
+    margin-top: -5px;
+  }  
+ .signin{
+  margin-top:25px;
+  
  }
- p{
+ a{
   text-decoration: none;
+
+ }
+ a:hover{
+  text-decoration: underline;
  }
 
- p:hover{
-  color: rgb(28, 214, 223);
- }
- .remember{
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 5px;
-  margin-bottom: 10px;
- }
+
+     
   </style>
 </head>
 <body>
   <div class="container">
-  <h1 class="title">Login</h1>
-  <form>
-    <input type="text" class="input" placeholder="Username" required> <br>
-    <input type="password" class="input" placeholder="password" required> <br>
-    <input type="checkbox" class="check"  ><label>Remember Me</label><br>
-    <button type="submit" class="submit">Login</button>
-  </form>
-   <p>New User?<a href="signin.html">Signin</a></p>
-  <div class="password">
-  <a href="https://in.pinterest.com/pin/713398397255824861/">Forgot Password?</a>
-</div>
-</div>
+    <h1>Login</h1>
+  <div class="input_blk">
+    <label for="username" >Username</label>
+    <input type="text" class="input" placeholder="Enter username">
+    <label for="password" >Password</label>
+    <input type="password" class="input" placeholder="Enter Password">
+  </div>
+  <div id="check">
+      <input type="checkbox" class="chechbx">
+      <label for="remember">RememberMe</label>
+    </div><br>
+    <button type="submit" class="log">Login</button><br>
+    <p class="signin">Don't have an Account?<a href="#">SignIn</a></p>
+  </div>
 </body>
 </html>
